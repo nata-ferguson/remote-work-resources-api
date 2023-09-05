@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const RemoteWorkResourceSchema = new mongoose.Schema({
   name: String,
   url: String,
+  region: String,
   category: String,
   description: String,
 });

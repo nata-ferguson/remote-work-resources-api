@@ -13,18 +13,21 @@ mongoose
       {
         name: "Website 1",
         url: "http://website1.com",
+        region: "Global",
         category: "Job Board",
         description: "Description 1",
       },
       {
         name: "Website 2",
         url: "http://website2.com",
+        region: "Global",
         category: "Freelance",
         description: "Description 2",
       },
       {
         name: "Website 3",
         url: "http://website3.com",
+        region: "Europe",
         category: "Job Board",
         description: "Description 3",
       },
