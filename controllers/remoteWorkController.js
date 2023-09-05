@@ -1,8 +1,25 @@
 const RemoteWorkResource = require("../models/RemoteWorkResource");
 
 exports.getAll = async (req, res) => {
-  const resources = await RemoteWorkResource.find();
-  console.log(resources);
+  const { category, region, sortBy } = req.query; // Capture query parameters
+
+  let filter = {}; // Build filter object
+
+  if (category) {
+    filter.category = category;
+  }
+
+  if (region) {
+    filter.region = region;
+  }
+
+  let sort = {}; // Implement sorting
+
+  if (sortBy) {
+    sort[sortBy] = 1; // 1 for ascending, -1 for descending
+  }
+
+  const resources = await RemoteWorkResource.find(filter).sort(sort);
   res.json(resources);
 };
 

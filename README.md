@@ -19,7 +19,7 @@ This API currently supports only the GET method for fetching remote work resourc
 
 Get All Remote Work Resources
 
-**GET http://localhost:3000/api/remoteWorkResource/**
+**Endpoint:** **GET http://localhost:3000/api/remoteWorkResource/**
 
 Example Response:
 
@@ -36,6 +36,22 @@ Example Response:
   // ... more data
 ]
 ```
+
+#### Query Parameters
+
+- `category`: Filter by category (e.g., Job Board, Freelance).
+- `region`: Filter by region (e.g., Global, USA).
+- `sortBy`: Sort by field (e.g., name, category).
+
+#### Example Usage
+
+To get all resources in the "Job Board" category:
+
+GET /api/remoteWorkResource?category=Job+Board
+
+To get all resources available globally and sort them by name:
+
+GET /api/remoteWorkResource?region=Global&sortBy=name
 
 ## Public Availability
 
