@@ -19,7 +19,7 @@ This API currently supports only the GET method for fetching remote work resourc
 
 Get All Remote Work Resources
 
-**Endpoint:** **GET http://localhost:3000/api/remoteWorkResource/**
+**Endpoint:** **GET https://nf-remote-work-resources-api.vercel.app/api/remoteWorkResource**
 
 Example Response:
 
