@@ -8,7 +8,7 @@ const mongoose = require("mongoose"); // Use Mongoose
 const rateLimit = require("express-rate-limit");
 const cors = require("cors");
 
-const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/myDatabase"; //This is my MongoDB connection string
+const uri = process.env.MONGODB_URI; // || "mongodb://127.0.0.1:27017/myDatabase"; //This is my MongoDB connection string
 
 // Import model and routes
 const RemoteWorkResource = require("./models/RemoteWorkResource");
